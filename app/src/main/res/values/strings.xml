@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">2_1_2_Spinner_Countries-cities-streets</string>
+    <string name="app_name">Spinner «Страны-города-улицы»</string>
+    <string name="btn_ok">Ок</string>
+    <string name="choice_the_country">Выбор страны</string>
+    <string name="choice_the_city">Выбор города</string>
+    <string name="choosing_a_house_number">Выбор номера дома</string>
+    <string-array name="countries">
+        <item>Россия</item>
+        <item>Украина</item>
+        <item>Белорусь</item>
+    </string-array>
+    <string-array name="r_cities">
+        <item>Москва</item>
+        <item>Казань</item>
+        <item>Нижний Новгород</item>
+    </string-array>
+    <string-array name="u_cities">
+        <item>Киев</item>
+        <item>Одесса</item>
+        <item>Харьков</item>
+    </string-array>
+    <string-array name="b_cities">
+        <item>Минск</item>
+        <item>Брест</item>
+        <item>Гродно</item>
+    </string-array>
 </resources>

@@ -4,48 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnOk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/btn_ok"
+        android:onClick="btnOkClicked"
+        app:layout_constraintEnd_toEndOf="@+id/houseNumberSpinner"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+        app:layout_constraintStart_toStartOf="@+id/houseNumberSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/houseNumberSpinner" />
 
     <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="0dp"
+        android:id="@+id/citySpinner"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="164dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/countrySpinner"
+        app:layout_constraintStart_toStartOf="@+id/countrySpinner"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="0dp"
+        android:id="@+id/houseNumberSpinner"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="67dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/citySpinner"
+        app:layout_constraintStart_toStartOf="@+id/citySpinner"
+        app:layout_constraintTop_toBottomOf="@+id/citySpinner" />
 
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="0dp"
+        android:id="@+id/countrySpinner"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="85dp"
         android:layout_marginEnd="1dp"
@@ -53,8 +57,10 @@
         android:layout_marginRight="1dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="79dp"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner2"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/citySpinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
